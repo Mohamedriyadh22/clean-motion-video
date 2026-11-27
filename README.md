@@ -18,6 +18,8 @@ It checks your computer and installs anything missing (Node.js, ffmpeg, Chrome, 
 
 Claude asks for anything missing, writes the script, **waits for your approval** before spending voice credits, shows you still frames, then renders and verifies the MP4.
 
+**Step-by-step guide (English + العربية): [USAGE.md](USAGE.md)**: opening the app, choosing the folder, writing a good request, asking for changes, and cost.
+
 > Just want to check, without installing anything?
 > `$env:CMV_CHECK_ONLY="1"; irm https://raw.githubusercontent.com/Mohamedriyadh22/clean-motion-video/main/install.ps1 | iex`
 
@@ -47,6 +49,7 @@ Claude asks for anything missing, writes the script, **waits for your approval**
 | path | what |
 |---|---|
 | `install.ps1` | the one-line Windows installer |
+| `USAGE.md` | how to use it, step by step (English + Arabic) |
 | `SKILL.md` | the workflow Claude follows |
 | `references/clarity.md` | shot recipes, type scale, review checklist |
 | `scripts/make_vo.py` | ElevenLabs narration with word timestamps |
