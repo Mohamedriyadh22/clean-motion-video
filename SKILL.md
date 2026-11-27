@@ -25,6 +25,13 @@ See `references/clarity.md` for shot recipes and the review checklist.
 
 ## Workflow
 
+### Before anything: is the machine ready?
+Check quietly (`node --version`, `ffmpeg -version`, Chrome, `python -c "import requests, dotenv"`, a `.env` with `ELEVENLABS_API_KEY`, and the animation-studio skill being available). If something is missing, don't walk the user through a long manual setup. On Windows, give them this one line to paste into PowerShell, which installs and checks everything and helps them add their own key:
+```powershell
+irm https://raw.githubusercontent.com/Mohamedriyadh22/clean-motion-video/main/install.ps1 | iex
+```
+Then wait for them to run it. If animation-studio is missing, tell them: Claude app → Plugins → Browse plugins → "animation-studio" → Install. Never ask for, store or print the API key yourself beyond reading it from `.env`.
+
 ### 0. Brief (one round of questions, at most)
 Settle these, asking only for what is missing:
 - topic, audience and the length (60–100 s is typical; a story needs about 90–100 s)
